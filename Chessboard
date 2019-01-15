@@ -1,0 +1,14 @@
+let size = 8;
+    output = "";
+
+for (var columns = 0; columns < size; columns++) {   
+  for (var rows = 0; rows < size; rows++) {
+    if ((columns + rows) % 2 == 0)
+      output += " ";
+    else
+      output += "#";
+  }
+  output += "\n";
+}
+
+console.log(output);
